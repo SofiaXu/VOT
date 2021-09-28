@@ -1,0 +1,44 @@
+<resources>
+    <!-- regex -->
+    <string name="regex_user_id" translatable="false">\\d+</string>
+    <string name="regex_password_length" translatable="false">.{8,}</string>
+    <!-- app -->
+    <string name="app_name">VOT</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_username">游客</string>
+    <string name="nav_user_role">未登录</string>
+    <string name="action_settings">设置</string>
+    <!-- popup -->
+    <string name="popup_close">关闭</string>
+    <!-- general strings -->
+    <string name="username">用户名</string>
+    <string name="userid">用户 ID</string>
+    <string name="password">Password</string>
+    <string name="user_role">User Role</string>
+    <string name="network_error_popup">数据加载失败，网络异常！</string>
+    <!-- home fragment -->
+    <string name="home_fragment_title">主页</string>
+    <!-- login fragment -->
+    <string name="login_fragment_title">登录/登出</string>
+    <string name="login_fragment_login_button">Log in</string>
+    <string name="login_fragment_login_userid_error">用户 ID 必须为数字</string>
+    <string name="login_fragment_login_password_error">密码必须大于 8 位</string>
+    <string name="login_fragment_login_popup">尝试登录中……</string>
+    <string name="login_fragment_login_failed_network_error_popup">登录失败，网络异常！</string>
+    <string name="login_fragment_logout_popup">您已登出。</string>
+    <!-- search fragment -->
+    <string name="search_fragment_title">搜索</string>
+    <string name="search_fragment_button">搜索</string>
+    <string name="search_fragment_search_box">关键词</string>
+    <!-- video list fragment -->
+    <string name="video_list_fragment_title">视频列表</string>
+    <!-- video play fragment -->
+    <string name="video_play_fragment_title">视频播放</string>
+    <!-- video detail fragment -->
+    <string name="video_detail_fragment_title">视频详情</string>
+    <string name="video_detail_info">详细信息</string>
+    <string name="video_detail_watch">观看</string>
+    <string name="video_detail_uploader">上传者</string>
+    <string name="video_detail_upload_date">上传日期</string>
+</resources>

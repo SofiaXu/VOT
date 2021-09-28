@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:bind="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="videoPlayData" type="site.aoba.android.vot.ui.videoplay.VideoPlayViewModel"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000"
+            tools:context=".ui.videoplay.VideoPlayActivity">
+        <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/video_play_player"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                app:default_artwork="@drawable/no_image"
+                app:use_artwork="true"
+                android:maxHeight="400dp"
+                android:layout_height="match_parent">
+
+        </com.google.android.exoplayer2.ui.PlayerView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

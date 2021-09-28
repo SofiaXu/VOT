@@ -1,0 +1,45 @@
+<resources>
+    <!-- regex -->
+    <string name="regex_user_id" translatable="false">\\d+</string>
+    <string name="regex_password_length" translatable="false">.{8,}</string>
+    <string name="base_url" translatable="false">http://172.17.240.1/aspnettest</string>
+    <!-- app -->
+    <string name="app_name">VOT</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_username">Guest</string>
+    <string name="nav_user_role">Guest</string>
+    <string name="action_settings">Settings</string>
+    <!-- popup -->
+    <string name="popup_close">Close</string>
+    <!-- general strings -->
+    <string name="username">Username</string>
+    <string name="userid">User ID</string>
+    <string name="password">Password</string>
+    <string name="user_role">User Role</string>
+    <string name="network_error_popup">Failed to Load data. Network Error!</string>
+    <!-- home fragment -->
+    <string name="home_fragment_title">Home</string>
+    <!-- login fragment -->
+    <string name="login_fragment_title">Log in/Out</string>
+    <string name="login_fragment_login_button">Log in</string>
+    <string name="login_fragment_login_userid_error">User ID must be number.</string>
+    <string name="login_fragment_login_password_error">Password must be longer than 8.</string>
+    <string name="login_fragment_login_popup">Logging in…</string>
+    <string name="login_fragment_login_failed_network_error_popup">Failed to log in. Network Error!</string>
+    <string name="login_fragment_logout_popup">You have logged out.</string>
+    <!-- search fragment -->
+    <string name="search_fragment_title">Search</string>
+    <string name="search_fragment_button">Search</string>
+    <string name="search_fragment_search_box">Key word</string>
+    <!-- video list fragment -->
+    <string name="video_list_fragment_title">Videos</string>
+    <!-- video play fragment -->
+    <string name="video_play_fragment_title">Video Play</string>
+    <!-- video detail fragment -->
+    <string name="video_detail_fragment_title">Video Detail</string>
+    <string name="video_detail_info">Information</string>
+    <string name="video_detail_watch">Watch Video</string>
+    <string name="video_detail_uploader">Uploader</string>
+    <string name="video_detail_upload_date">Upload Date</string>
+</resources>

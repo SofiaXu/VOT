@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mobile_navigation"
+            app:startDestination="@id/nav_smooth_home">
+
+    <fragment
+            android:id="@+id/nav_smooth_home"
+            android:name="site.aoba.android.vot.ui.smoothhome.SmoothHomeFragment"
+            android:label="@string/home_fragment_title"
+            tools:layout="@layout/home_fragment">
+        <deepLink app:uri="vot://home"/>
+        <action android:id="@+id/action_nav_home_to_nav_detail" app:destination="@id/nav_detail"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/nav_login"
+            android:name="site.aoba.android.vot.ui.login.LoginFragment"
+            android:label="@string/login_fragment_title"
+            tools:layout="@layout/login_fragment">
+    </fragment>
+
+    <fragment
+            android:id="@+id/nav_search"
+            android:name="site.aoba.android.vot.ui.search.SearchFragment"
+            android:label="@string/search_fragment_title"
+            tools:layout="@layout/search_fragment">
+        <argument
+                android:name="searchText"
+                app:argType="string"
+                app:nullable="true"/>
+        <deepLink app:uri="vot://search?searchText={searchText}"/>
+        <action android:id="@+id/action_nav_search_to_nav_detail" app:destination="@id/nav_detail"/>
+    </fragment>
+    <fragment
+            android:id="@+id/nav_detail"
+            android:name="site.aoba.android.vot.ui.videodetail.VideoDetailFragment"
+            android:label="@string/video_detail_fragment_title"
+            tools:layout="@layout/video_detail_fragment">
+        <argument
+                android:name="videoId"
+                app:argType="long"/>
+        <deepLink app:uri="vot://video/{videoId}"/>
+        <action android:id="@+id/action_nav_detail_to_nav_video_play" app:destination="@id/nav_video_play"/>
+    </fragment>
+    <activity
+            android:name="site.aoba.android.vot.ui.videoplay.VideoPlayActivity"
+            android:label="@string/video_play_fragment_title"
+            android:id="@+id/nav_video_play">
+        <argument android:name="videoId" app:argType="long"/>
+        <deepLink app:uri="vot://video/play/{videoId}"/>
+    </activity>
+</navigation>
